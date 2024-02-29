@@ -1,14 +1,14 @@
-# Stackプログラミング言語標準規格
-- トークンは改行やスペース・タブで区切る
-- リテラルで値が出て来たら型付けしスタックに積む
-- 変数名が出て来たら変数の値をスタックに積む
-- 変数はスタックとは別に中長期的なデータ保持に用いる
-- シャープ`#`で囲まれた文字列はコメントとして認識される
-- リテラルが値として認識できない場合はコマンドとして実行する
-- コマンドの引数は必ずスタックから取り、戻り値は必ずスタックに積む
-- スタックから取った引数はコマンド実行時に暗黙の型変換を行う
-- コマンドとして認識されない場合は文字列としてスタックに積む
-- 値のデータ型は数値・論理・文字列・リストの４つ
-- 文字列は半角丸カッコ `( )` で囲み、ネスト可能にする
-- リストは半角各カッコ `[ ]` で囲み、ネスト可能にする
-- リストは区切らずリテラルにある式を評価し、スタックの増加分をリストの要素にする
+# Stack programming language standard
+- Separate tokens with line breaks, spaces, or tabs
+- When a value appears as a literal, type it and put it on the stack
+- When a variable name appears, put the value of the variable on the stack
+- Variables are used for medium- to long-term data storage separately from the stack
+- Strings enclosed in sharps `#` are recognized as comments.
+- Execute as a command if literal cannot be recognized as a value
+- Command arguments must be taken from the stack, and return values must be placed on the stack.
+- Arguments taken from the stack undergo implicit type conversion when executing the command.
+- If not recognized as a command, put it on the stack as a string
+- Value data types are numeric, logical, string, and list.
+- Enclose strings in half-width round brackets `( )` to allow nesting.
+- Enclose the list in half-width parentheses `[ ]` to enable nesting.
+- Evaluate the expression in the literal without delimiting the list, and use the increase in the stack as an element of the list
