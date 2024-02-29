@@ -1,2 +1,2 @@
-# Stackプログラミング言語標準規格
-Stackプログラミング言語は[標準規格](STANDARD.md)を満たす処理系を正式なディストリビューションとします
+# Stack programming language standard
+The official distribution of the Stack programming language is a processing system that satisfies the [standard](STANDARD.md).
