@@ -1,14 +1,14 @@
-# Stack programming language standard
-- Separate tokens with line breaks, spaces, or tabs
-- When a value appears as a literal, type it and put it on the stack
-- When a variable name appears, put the value of the variable on the stack
-- Variables are used for medium- to long-term data storage separately from the stack
+#  Standard of Stack Programming Language
+- Separate tokens with line breaks, spaces, or tabs.
+- When a value recognized as a literal, type it and push it on the stack.
+- When a variable name appears, put the value of the variable on the stack.
+- Variables are used for medium to long term data storage separately from the stack.
 - Strings enclosed in sharps `#` are recognized as comments.
-- Execute as a command if literal cannot be recognized as a value
+- Execute as a command if literal cannot be recognized as a value.
 - Command arguments must be taken from the stack, and return values must be placed on the stack.
 - Arguments taken from the stack undergo implicit type conversion when executing the command.
-- If not recognized as a command, put it on the stack as a string
-- Value data types are numeric, logical, string, and list.
-- Enclose strings in half-width round brackets `( )` to allow nesting.
-- Enclose the list in half-width parentheses `[ ]` to enable nesting.
-- Evaluate the expression in the literal without delimiting the list, and use the increase in the stack as an element of the list
+- If not recognized as a command, put it on the stack as a string.
+- Value data types are only numeric, logical, string, and list.
+- Enclose string in half-width round brackets `( )` , it can nesting.
+- Enclose list in half-width parentheses `[ ]` , it can nesting.
+- Evaluate the expression in the literal in the list, and use the increase in the stack as an element of the list.
