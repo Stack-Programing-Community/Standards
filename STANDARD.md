@@ -1,7 +1,7 @@
-#  Standard of Stack Programming Language
+#  Standards of Stack Programming Language
 - Separate tokens with line breaks, spaces, or tabs.
 - When a value recognized as a literal, typecasting it and push it on the stack.
-- When a variable name appears, put the value of the variable on the stack.
+- When a variable name appears, push the value of the variable on the stack.
 - Variables are used for medium to long term data storage separately from the stack.
 - Strings enclosed in sharps `#` are recognized as comments.
 - Execute as a command if literal cannot be recognized as a value.
@@ -9,7 +9,7 @@
 - If command execution get any error, push the error value on the stack.
 - Arguments taken from the stack undergo implicit type conversion when executing the command.
 - If not recognized as a command, push it on the stack as a string.
-- Value data types are only number, logical, string, list, and error.
+- Value data types are only number, logical, string, list, and special type is error.
 - Enclose string in half-width round brackets `( )` , it can nesting.
 - Enclose list in half-width parentheses `[ ]` , it can nesting.
 - Evaluate the expression in the literal in the list, and use the increase in the stack as an element of the list.
