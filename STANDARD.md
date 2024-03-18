@@ -9,7 +9,8 @@
 - If command execution get any error, push the error value on the stack.
 - Arguments taken from the stack undergo implicit type conversion when executing the command.
 - If not recognized as a command, push it on the stack as a string.
-- Value data types are only number, logical, string, list, and special type is error.
+- Primitive data types are number, logical, string, list, and special type is error.
+- User can define original object by instantiation from list type data structure. 
 - Enclose string in half-width round brackets `( )` , it can nesting.
 - Enclose list in half-width parentheses `[ ]` , it can nesting.
 - Evaluate the expression in the literal in the list, and use the increase in the stack as an element of the list.
